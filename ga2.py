@@ -68,7 +68,7 @@ if uploaded_file is not None:
     The pie chart above depicts the proportion of average order value by payment method, providing a clear picture of customer behavior regarding payment preferences. Each segment of the pie represents a different payment method, with sizes reflecting their respective average order values. This visualization underscores the importance of understanding preferred payment methods, as it can help tailor marketing strategies and enhance customer satisfaction by optimizing the payment experience.
     """)
 
-    """# Marcus A, Bugaoan"""
+    """# Marcus A. Bugaoan"""
     
     # Pie chart representing the percentage of completed products
     def pie_chart_completed_products():
@@ -102,7 +102,29 @@ if uploaded_file is not None:
     This pie chart shows the percentage of each payment method that was completed and not canceled by the customer when ordering a product. Each segment of the pie comes from the total of 67.2% completed orders (which is 13,432 out of 20,000). This is insightful for sellers, as it helps them understand which payment methods are more trusted by customers.
     """)
 
-
-
-
-
+    """# Christian Matthew Herrera"""
+   
+    # Compare the number of transactions by gender
+    gender_transactions = df['Gender'].value_counts()
+    fig, ax = plt.subplots()
+    ax.bar(gender_transactions.index, gender_transactions.values)
+    ax.set_title('Number of Transactions by Gender')
+    ax.set_xlabel('Gender')
+    ax.set_ylabel('Number of Transactions')
+    st.pyplot(fig)
+ 
+    st.write("""
+    This bar chart illustrates the distribution of transactions based on the gender of the customer. The x-axis represents the gender categories (male and female), and the y-axis indicates the number of transactions. The height of each bar corresponds to the frequency of transactions for each gender.
+    """)
+ 
+   # Age distribution of customers
+    fig, ax = plt.subplots()
+    ax.hist(df['Age'], bins=10, edgecolor='black')
+    ax.set_title('Age Distribution of Customers')
+    ax.set_xlabel('Age')
+    ax.set_ylabel('Frequency')
+    st.pyplot(fig)
+ 
+    st.write("""
+    This histogram depicts the distribution of customer ages. The x-axis shows the age ranges, and the y-axis represents the frequency of customers falling within each age range. The height of each bar indicates the number of customers in that particular age group. The shape of the histogram reveals the overall age profile of the customer base.
+    """)
