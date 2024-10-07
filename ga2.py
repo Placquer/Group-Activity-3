@@ -21,8 +21,8 @@ import streamlit as st
 # Set up the title and introduction for the Streamlit app
 st.title('Electronic Sales Dashboard')
 st.write("Group 7")
-st.write("Christian Matthew Herrera - ")
-st.write("Marcus Bugaoan - ")
+st.write("Christian Matthew Herrera - 2022104927 - ChrisMapua")
+st.write("Marcus Bugaoan - 2022105108 - Le-Kriaten")
 st.write("Jann Daniel Fuensalida - 2020102613 - Placquer")          
 
 
@@ -103,7 +103,7 @@ if uploaded_file is not None:
     """)
 
     """# Christian Matthew Herrera"""
-   
+    
     # Compare the number of transactions by gender
     gender_transactions = df['Gender'].value_counts()
     fig, ax = plt.subplots()
@@ -112,11 +112,11 @@ if uploaded_file is not None:
     ax.set_xlabel('Gender')
     ax.set_ylabel('Number of Transactions')
     st.pyplot(fig)
- 
+
     st.write("""
     This bar chart illustrates the distribution of transactions based on the gender of the customer. The x-axis represents the gender categories (male and female), and the y-axis indicates the number of transactions. The height of each bar corresponds to the frequency of transactions for each gender.
     """)
- 
+
    # Age distribution of customers
     fig, ax = plt.subplots()
     ax.hist(df['Age'], bins=10, edgecolor='black')
@@ -124,7 +124,7 @@ if uploaded_file is not None:
     ax.set_xlabel('Age')
     ax.set_ylabel('Frequency')
     st.pyplot(fig)
- 
+
     st.write("""
     This histogram depicts the distribution of customer ages. The x-axis shows the age ranges, and the y-axis represents the frequency of customers falling within each age range. The height of each bar indicates the number of customers in that particular age group. The shape of the histogram reveals the overall age profile of the customer base.
     """)
