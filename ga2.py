@@ -22,7 +22,11 @@ import streamlit as st
 st.title('Electronic Sales Dashboard')
 st.write("Group 7")
 st.write("Christian Matthew Herrera - ")
+<<<<<<< HEAD
 st.write("Marcus Bugaoan - 2022105108 - Le-Kriaten")
+=======
+st.write("Marcus Bugaoan - ")
+>>>>>>> af704dfbfe0c4bd7d2b5daae5668b6ebdd296ac6
 st.write("Jann Daniel Fuensalida - 2020102613 - Placquer")          
 
 
@@ -68,7 +72,11 @@ if uploaded_file is not None:
     The pie chart above depicts the proportion of average order value by payment method, providing a clear picture of customer behavior regarding payment preferences. Each segment of the pie represents a different payment method, with sizes reflecting their respective average order values. This visualization underscores the importance of understanding preferred payment methods, as it can help tailor marketing strategies and enhance customer satisfaction by optimizing the payment experience.
     """)
 
+<<<<<<< HEAD
     """# Marcus A. Bugaoan"""
+=======
+    """# Marcus A, Bugaoan"""
+>>>>>>> af704dfbfe0c4bd7d2b5daae5668b6ebdd296ac6
     
     # Pie chart representing the percentage of completed products
     def pie_chart_completed_products():
